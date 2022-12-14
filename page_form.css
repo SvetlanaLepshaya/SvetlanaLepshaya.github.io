@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  .header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+  }
+  
+  .label-menu {
+    display: none;
+  }
+  
+  .cart-label {
+    display: none;
+  }
+  
+  .logo-image {
+    transition: all 0.5s ease;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    flex-grow: 0;
+  }
+  
+  .header-inner {
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+  }
+  
+  .header-inner:hover .box-1 {
+    position: absolute;
+    top: 0;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__dropdown {
+    display: none;
+  }
+  
+  .header__name-class {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .speackers-box,
+  .headphones-box,
+  .televisions-box,
+  .soundbars-box,
+  .explore-box,
+  .support-box {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  
+  .dropdown--speackers,
+  .dropdown--headphones,
+  .dropdown--televisions,
+  .dropdown--soundbars,
+  .dropdown--explore,
+  .dropdown--support {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 75px;
+    flex-direction: column;
+    height: 450px;
+    padding: 50px 100px;
+    line-height: 40px;
+    font-size: 22px;
+    background-color: white;
+  
+  
+  }
+  
+  
+  .speackers-box:hover .dropdown--speackers {
+    display: flex;
+  
+  }
+  
+  .headphones-box:hover .dropdown--headphones {
+    display: flex;
+  }
+  
+  .televisions-box:hover .dropdown--televisions {
+    display: flex;
+  }
+  
+  .soundbars-box:hover .dropdown--soundbars {
+    display: flex;
+  }
+  
+  .explore-box:hover .dropdown--explore {
+    display: flex;
+  }
+  
+  .support-box:hover .dropdown--support {
+    display: flex;
+  }
+  
+  .dropdown__element {
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+    position: relative;
+  }
+  
+  .dropdown__element:hover {
+    padding-left: 30px;
+    transition: all 0.5s ease;
+  }
+  
+  .dropdown__element:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    height: 3px;
+    /*почему при 2-3px разная толщина линии*/
+    background: black;
+    transition: all 0.5s ease;
+  }
+  
+  .dropdown__element:hover:after {
+    width: 100%;
+  }
+  
+  .dropdown_.dropdown__element::after {
+    transform: translateX(-100%);
+  }
+  
+
+.main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    gap: 80px;
+}
+
+.form-wrapper {
+    width: 50%;
+}
+
+.form-title {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.input__field {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid lightgray;
+    padding: 5px 0;
+    margin-bottom: 50px;
+    font-size: 17px;
+    position: relative;
+}
+.field--email-wrapper,
+.field--password-wrapper {
+    position: relative;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.field--email-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    cursor: text;
+    color: #555555;
+    font-size: 12px;
+}
+.field--email:focus,
+.field--password:focus {
+    border-color: black;
+}
+.field--email:focus + .field--email-label{
+    top:-10px;
+    transition: all 0.3s ease;
+}
+.form-name-wrapper {
+    display: flex;
+}
+.field--password-label {
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    cursor: text;
+    color: #555555;
+}
+.field--password:focus + .field--password-label{
+    top:-10px;
+    transition: all 0.3s ease;
+}
+.input-remember-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+.checkbox-label {
+    font-size: 12px;
+    color: #555555;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.forgot-password {
+    color: #555555;
+    font-size: 12px;
+}
+.checkbox-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[id="checkbox-remember"]:checked + .checkbox-label .checkbox-icon::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: black;
+
+}
+.checkbox-forgot-password-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.privacy-policy {
+    color: #555555;
+    font-size: 12px;
+}
+.privacy-policy a{
+    color: #555555;
+}
+.btn--login {
+    display: block;
+    padding: 12px 40px;
+    border-radius: 23px;
+    background-color: #ffc356 ;
+    border: 2px solid #ffc356;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 50px auto;
+    cursor: pointer;
+}
+.btn--login:hover {
+    border-color: #555555;
+    background-color: white;
+}
+.box-create-account {
+    background: url(./image/form-background.webp);
+    background-size: cover;
+    width: 50%;
+    height: fit-content;
+    color: white;
+    padding: 50px ;
+    
+}
+.box-create-account .title{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.box-create-account .subtitle {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.description {
+    line-height: 25px;
+}
