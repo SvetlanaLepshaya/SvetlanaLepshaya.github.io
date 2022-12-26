@@ -13,6 +13,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -92,7 +96,7 @@ button {
   width: 100%;
   position: absolute;
   left: 0px;
-  top: 75px;
+  top: 72px;
   flex-direction: column;
   height: 450px;
   padding: 50px 100px;
@@ -504,9 +508,11 @@ img {
   display: flex;
   overflow: hidden;
 }
+
 .a9-image {
   transition: all 0.2s linear;
 }
+
 .a9-image-wrapper {
   width: 50%;
   overflow: hidden;
@@ -584,6 +590,7 @@ ul {
 
 ul>li {
   margin-bottom: 10px;
+  color: #555555;
 }
 
 .input-email-wrapper,
@@ -633,11 +640,96 @@ ul>li {
   top: -10px;
   transition: all 0.3s ease;
 }
+
 .subscribe-form .yellow-button {
   border: 2px solid #ffc356;
 }
+
 .subscribe-form .yellow-button:hover {
   border-color: black;
+}
+
+.footer {
+  background-color: #191817;
+  padding: 0px 36px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.footer-logo-image {
+  width: 200px;
+  padding-bottom: 50px;
+}
+
+.footer-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-links-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 100px;
+
+
+}
+
+.footer-links-box a {
+  text-decoration: none;
+  color: #fcfaee;
+  font-size: 12px;
+}
+
+.links-box__title {
+  color: #fcfaee;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-links-social {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #fcfaee;
+  border-radius: 50%;
+  margin: 0 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.social-icon-wrapper:hover {
+  background-color: #fcfaee;
+}
+
+.social-icon-wrapper:hover .social-icon {
+  color: #191817;
+}
+
+.social-icon {
+  line-height: 26px;
+  color: #fcfaee;
+  font-size: 13px;
+}
+
+.link-apps,
+.link-store {
+  display: inline-block;
+  font-size: 13px;
+  color: #fcfaee;
+  margin-bottom: 10px;
 }
 
 @media (max-width:850px) {
@@ -672,12 +764,12 @@ ul>li {
 
   .nav-wrapper {
     position: absolute;
-    top: 75px;
+    top: 67px;
     left: -300px;
     transition: all 0.5s linear;
     flex-direction: column;
     background-color: white;
-    font-size: 20px;
+    font-size: 16px;
     height: 90vh;
     width: 300px;
 
@@ -722,10 +814,12 @@ ul>li {
   .image-inner-right .title {
     font-size: 32px;
   }
+
   .holiday-campaign {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .holiday-campaign-inner .title {
     font-size: 32px;
   }
@@ -736,10 +830,12 @@ ul>li {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .text-container {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .category--wrapper {
     width: 100%;
     height: fit-content;
@@ -864,17 +960,24 @@ ul>li {
     width: 100%;
   }
 
-  .subscribe-form-wrapper{
+  .subscribe-form-wrapper {
     padding: 20px 15px;
     width: 100%;
   }
+
   .subscribe-form-container {
     margin: 10px;
   }
+
   .block-4 {
     padding: 20px 0;
   }
+
   .subscribe-form .yellow-button {
+    width: 100%;
+  }
+
+  .footer-links-social {
     width: 100%;
   }
 }

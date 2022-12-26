@@ -10,12 +10,16 @@ button {
     font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
     cursor: pointer;
   }
-  
+  a {
+    text-decoration: none;
+  }
   .header {
     width: 100%;
     position: fixed;
     background-color: white;
     z-index: 10;
+    top: 0;
+    
   }
   
   .label-menu {
@@ -90,7 +94,7 @@ button {
     width: 100%;
     position: absolute;
     left: 0px;
-    top: 75px;
+    top: 72px;
     flex-direction: column;
     height: 450px;
     padding: 50px 100px;
@@ -285,6 +289,7 @@ input[id="checkbox-remember"]:checked + .checkbox-label .checkbox-icon::after {
     font-size: 15px;
     margin: 50px auto;
     cursor: pointer;
+    transition: background-color 0.1s linear;
 }
 .btn--login:hover {
     border-color: #555555;
@@ -310,4 +315,161 @@ input[id="checkbox-remember"]:checked + .checkbox-label .checkbox-icon::after {
 }
 .description {
     line-height: 25px;
+}
+.footer {
+  background-color: #191817;
+  padding: 0px 36px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.footer-logo-image {
+  width: 200px;
+  padding-bottom: 50px;
+}
+
+.footer-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-links-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 100px;
+
+
+}
+
+.footer-links-box a {
+  text-decoration: none;
+  color: #fcfaee;
+  font-size: 12px;
+}
+
+.links-box__title {
+  color: #fcfaee;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-links-social {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon-wrapper {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #fcfaee;
+  border-radius: 50%;
+  margin: 0 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.social-icon-wrapper:hover {
+  background-color: #fcfaee;
+}
+
+.social-icon-wrapper:hover .social-icon {
+  color: #191817;
+}
+
+.social-icon {
+  line-height: 26px;
+  color: #fcfaee;
+  font-size: 13px;
+}
+
+.link-apps,
+.link-store {
+  display: inline-block;
+  font-size: 13px;
+  color: #fcfaee;
+  margin-bottom: 10px;
+}
+
+@media (max-width:850px) {
+
+  .header__name-class {
+    position: absolute;
+    right: -30px;
+    top: 15px;
+  }
+
+  .link-image {
+    position: absolute;
+    left: 50%;
+  }
+
+  .nav-wrapper {
+    position: absolute;
+    top: 67px;
+    left: -300px;
+    transition: all 0.5s linear;
+    flex-direction: column;
+    background-color: white;
+    font-size: 16px;
+    height: 90vh;
+    width: 300px;
+
+  }
+
+  .label-menu {
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+
+  #checkbox-menu:checked~.header .header-inner .nav-wrapper {
+    left: 0;
+  }
+
+  #checkbox-menu:checked~.header .header-inner .label-menu {
+    transform: rotate(180deg)
+  }
+
+  .dropdown--speackers,
+  .dropdown--headphones,
+  .dropdown--televisions,
+  .dropdown--soundbars,
+  .dropdown--explore,
+  .dropdown--support {
+    left: 170px;
+    top: 0;
+    height: 90vh;
+    width: 400px;
+  }
+  .main {
+    flex-direction: column;
+    margin: 20px;
+
+}
+.form-wrapper {
+    width: 100%;
+    padding: 0;
+}
+.box-create-account {
+  width: 100%;
+  font-size: 12px;
+  margin: 0; 
+  margin-bottom: 50px;
+  padding: 20px ;
+
+
+}
+.main {
+  padding-top: 100px;
+
+}
 }
