@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  body {
+    margin: 0;
+  
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+  }
+  
+  .label-menu {
+    display: none;
+  }
+  
+  .cart-label {
+    display: none;
+  }
+  
+  .logo-image {
+    transition: all 0.5s ease;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    flex-grow: 0;
+  }
+  
+  .header-inner {
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .header-inner:hover .box-1 {
+    position: absolute;
+    top: 0;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__dropdown {
+    display: none;
+  }
+  
+  .header__name-class {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .nav-wrapper__elem {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  a.nav-wrapper__elem {
+    display: flex;
+  }
+  
+  .dropdown--speackers,
+  .dropdown--headphones,
+  .dropdown--televisions,
+  .dropdown--soundbars,
+  .dropdown--explore,
+  .dropdown--support {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 72px;
+    flex-direction: column;
+    height: 450px;
+    padding: 50px 100px;
+    line-height: 40px;
+    font-size: 22px;
+    background-color: white;
+  
+  
+  }
+  
+  
+  .speackers-box:hover .dropdown--speackers {
+    display: flex;
+  
+  }
+  
+  .headphones-box:hover .dropdown--headphones {
+    display: flex;
+  }
+  
+  .televisions-box:hover .dropdown--televisions {
+    display: flex;
+  }
+  
+  .soundbars-box:hover .dropdown--soundbars {
+    display: flex;
+  }
+  
+  .explore-box:hover .dropdown--explore {
+    display: flex;
+  }
+  
+  .support-box:hover .dropdown--support {
+    display: flex;
+  }
+  
+  .dropdown__element {
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+    position: relative;
+  }
+  
+  .dropdown__element:hover {
+    padding-left: 30px;
+    transition: all 0.5s ease;
+  }
+  
+  .dropdown__element:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    height: 3px;
+    background: black;
+    transition: all 0.5s ease;
+  }
+  
+  .dropdown__element:hover:after {
+    width: 100%;
+  }
+  
+  .dropdown_.dropdown__element::after {
+    transform: translateX(-100%);
+  }
+
+/* footer styles*/
+
+
+
+  .footer {
+    background-color: #191817;
+    padding: 0px 36px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  
+  .footer-logo-image {
+    width: 200px;
+    padding-bottom: 50px;
+  }
+  
+  .footer-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 100px;  
+  }
+  
+  .footer-links-box a {
+    text-decoration: none;
+    color: #fcfaee;
+    font-size: 12px;
+  }
+  
+  .links-box__title {
+    color: #fcfaee;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links-social {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icon-wrapper {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #fcfaee;
+    border-radius: 50%;
+    margin: 0 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+  
+  .social-icon-wrapper:hover {
+    background-color: #fcfaee;
+  }
+  
+  .social-icon-wrapper:hover .social-icon {
+    color: #191817;
+  }
+  
+  .social-icon {
+    line-height: 26px;
+    color: #fcfaee;
+    font-size: 13px;
+  }
+  
+  .link-apps,
+  .link-store {
+    display: inline-block;
+    font-size: 13px;
+    color: #fcfaee;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  @media (max-width:850px) {
+    
+  
+    .header__name-class {
+      
+      right: -30px;
+      top: 15px;
+    }
+    .header-inner {
+    padding: 20px 10px;}
+  
+    .cart-label {
+      display: block;
+    }
+  
+  
+    .image-wrapper-left,
+    .image-wrapper-right {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .link-image {
+      position: absolute;
+      left: 47%;
+    }
+  
+    .nav-wrapper {
+      position: absolute;
+      top: 67px;
+      left: -300px;
+      transition: all 0.2s linear;
+      flex-direction: column;
+      background-color: white;
+      font-size: 16px;
+      height: 90vh;
+      width: 300px;
+  
+    }
+  
+    .label-menu {
+      display: block;
+      cursor: pointer;
+      transition: all 0.2s linear;
+    }
+  
+    #checkbox-menu:checked~.header .header-inner .nav-wrapper {
+      left: 0;
+    }
+  
+    #checkbox-menu:checked~.header .header-inner .label-menu {
+      transform: rotate(180deg)
+    }
+  
+    .speackers-box:hover .dropdown--speackers {
+        display: none;
+      
+      }
+      
+      .headphones-box:hover .dropdown--headphones {
+        display: none;
+      }
+      
+      .televisions-box:hover .dropdown--televisions {
+        display: none;
+      }
+      
+      .soundbars-box:hover .dropdown--soundbars {
+        display: none;
+      }
+      
+      .explore-box:hover .dropdown--explore {
+        display: none;
+      }
+      
+      .support-box:hover .dropdown--support {
+        display: none;
+      }
+      .footer-links-social {
+        width: 100%;
+      }
+  }  

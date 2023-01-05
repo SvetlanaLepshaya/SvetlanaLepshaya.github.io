@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bang-olufsen.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="shortcut icon" href="./image/B_O_White.svg" type="image/svg" />    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./image/B_O_White.svg" type="image/svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -15,12 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <script
-    src="https://kit.fontawesome.com/3ae0c0ee8a.js"
-    crossorigin="anonymous"
-  ></script>
-    <link rel="stylesheet" href="./page_form.css" />
-    <link rel="stylesheet" href="./header_footer.css">
+      src="https://kit.fontawesome.com/3ae0c0ee8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./header_footer.css" />
+    <link rel="stylesheet" href="./product_page.css" />
   </head>
   <body>
     <input type="checkbox" id="checkbox-menu" hidden />
@@ -38,8 +43,8 @@
         /></a>
         <div class="nav-wrapper">
           <div class="speackers-box nav-wrapper__elem">
-            <a href="./catalogue_page.html">SPEACKERS</a> 
-            <div class="dropdown--speackers ">
+            <a href="./catalogue_page.html">SPEACKERS</a>
+            <div class="dropdown--speackers">
               <a href="" class="dropdown__element">All speackers</a>
               <a href="" class="dropdown__element">Portable</a>
               <a href="" class="dropdown__element">Home audio</a>
@@ -105,72 +110,87 @@
           /></a>
           <a href=""><img src="./image/icon_store.svg" alt="" /></a>
           <a href=""><img src="./image/icon_cart.svg" alt="" /></a>
-
         </div>
       </div>
     </div>
-    <div class="main">
-      <div class="form-wrapper">
-        <form action="">
-          <span class="form-title">Log in</span> <br />
-          <div class="field--email-wrapper">
-            <input
-              class="input__field field--email"
-              id="field--email"
-              type="email"
-            />
-            <label for="field--email" class="field--email-label"
-              >Email address *</label
-            >
-          </div>
-          <div class="field--password-wrapper">
-            <input
-              class="input__field field--password margin-bottom-0"
-              id="field--password"
-              type="password"
-            />
-            <label for="field--password" class="field--password-label"
-              >Password *</label
-            >
-          </div>
 
-          <div class="checkbox-forgot-password-wrapper">
-            <div class="input-remember-wrapper">
-              <input
-                type="checkbox"
-                name="checkbox-remember"
-                id="checkbox-remember"
-                checked
-                hidden
-              />
+    <div class="page">
 
-              <label class="checkbox-label" for="checkbox-remember">
-                <span class="checkbox-icon" >  </span>  Remember me</label
-              >
+
+      <div class="product-wrapper">
+
+        <div class="img-wrapper">
+            <div class="image-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                            <img src="./image/speckers/1.webp" width="100%" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                            <img src="./image/speckers/2.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/3.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/3.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/3.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/4.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/5.webp" width="100%" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/6.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/7.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/8.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/9.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/10.webp" width="100%" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/speckers/11.webp" width="100%" alt="">
+                    </div>
+
+                   
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
             </div>
-            <a class="forgot-password" href="">Forgot password?</a>
-          </div>
-          <span class="privacy-policy">This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>  and <a href="https://policies.google.com/terms">Terms of Service</a>  apply.</span>
-          <button class="btn--login"> Log in</button>
-          
-        </form>
-
-      </div>
-
-      <div class="box-create-account">
-        <div class="title"><span>Create your account</span></div>
-        <div class="subtitle"><span>With your account, you can</span></div>
-        <div class="description">
-            <ul>
-                <li>Use thr Bang & Olufsen app to setup, optimize and control your products</li>
-                <li>Manage your personal details, history and preferences</li>
-                <li>View your access to the house of Bang & Olufsen and exclusive benefits.</li>
-            </ul>
+            
         </div>
+       
+
         
-        <button class="btn--login">Create Account</button>
-      </div>
+
+        <div class="product-information">ghj</div>
+
+        </div>
     </div>
+
     <div class="footer">
       <div class="footer-logo-image">
         <img src="./image/primary-logo-white.svg" width="100%" alt="" />
@@ -252,5 +272,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

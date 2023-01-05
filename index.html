@@ -21,10 +21,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./header_footer.css">
   </head>
   <body>
     <input type="checkbox" id="checkbox-menu" hidden />
-    <input type="checkbox" id="checkbox-cart" hidden />
+
     <div class="header">
       <div class="header-inner">
         <label class="label-menu" for="checkbox-menu"
@@ -38,8 +39,8 @@
             alt=""
         /></a>
         <div class="nav-wrapper">
-          <div class="speackers-box">
-            SPEACKERS
+          <div class="speackers-box nav-wrapper__elem">
+            <a href="./catalogue_page.html">SPEACKERS</a> 
             <div class="dropdown--speackers">
               <a href="" class="dropdown__element">All speackers</a>
               <a href="" class="dropdown__element">Portable</a>
@@ -48,7 +49,7 @@
               <a href="" class="dropdown__element">Accessories</a>
             </div>
           </div>
-          <div class="headphones-box">
+          <div class="headphones-box nav-wrapper__elem">
             HEADPHONES
             <div class="nav__dropdown dropdown--headphones">
               <a href="" class="dropdown__element">All headphones</a>
@@ -59,7 +60,7 @@
               <a href="" class="dropdown__element">Earphone accessories</a>
             </div>
           </div>
-          <div class="televisions-box">
+          <div class="televisions-box nav-wrapper__elem">
             TELEVISIONS
             <div class="nav__dropdown dropdown--televisions">
               <a href="" class="dropdown__element">All televisions</a>
@@ -67,7 +68,7 @@
               <a href="" class="dropdown__element">Compare Televisions</a>
             </div>
           </div>
-          <div class="soundbars-box">
+          <div class="soundbars-box nav-wrapper__elem">
             SOUNDBARS
             <div class="nav__dropdown dropdown--soundbars">
               <a href="" class="dropdown__element">All Soundbars</a>
@@ -75,7 +76,7 @@
               <a href="" class="dropdown__element">Beosounds Theatre</a>
             </div>
           </div>
-          <div class="explore-box">
+          <div class="explore-box nav-wrapper__elem">
             EXPLORE
             <div class="nav__dropdown dropdown--explore">
               <a href="" class="dropdown__element">About Us</a>
@@ -88,7 +89,7 @@
               <a href="" class="dropdown__element">Corporate</a>
             </div>
           </div>
-          <div class="support-box">
+          <div class="support-box nav-wrapper__elem">
             SUPPORT
             <div class="nav__dropdown dropdown--support">
               <a href="" class="dropdown__element">Customer Care</a>
@@ -106,9 +107,6 @@
           /></a>
           <a href=""><img src="./image/icon_store.svg" alt="" /></a>
           <a href=""><img src="./image/icon_cart.svg" alt="" /></a>
-          <label for="checkbox-cart" class="cart-label"
-            ><img src="./image/icon_cart.svg" alt=""
-          /></label>
         </div>
       </div>
     </div>

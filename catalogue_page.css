@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  .products-wrapper img {
+    background-color: #f9f9f9 ;
+  }
+  
+.page {
+    padding: 25px 0;
+    padding-top: 75px;
+}
+.main-title {
+    padding: 15px 25px;
+    font-size: 35px;
+}
+.main-subtitle {
+    display: inline-block;
+    padding: 20px 25px;
+    font-size: 15px;
+    color: #555555;
+}
+.subcategoryes-wrapper {
+    padding: 50px 25px;
+    padding-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+
+}
+.subcategory-box {
+    min-width: 250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.subcategory-box:first-child .subcategory-title {
+    color: white;
+    background-color: black;
+
+}
+.subcategory-title {
+    margin-top: -4px;
+    color: black;
+    background-color: white;
+    padding: 25px 20px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.products-wrapper {
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+.product {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.product-title, .product-price, .product-subtitle{
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    padding-bottom: 4px;
+    
+}
+.product-title{
+    letter-spacing: 1.5px;
+    position: relative;
+}
+.product-subtitle {
+    color: #555555;
+}
+.product-title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+.product:hover .product-title::after {
+    transform: translateX(100%);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    position: absolute;
+    color: gray;
+    top: 0%;
+    display: none;
+}
+.image-swiper:hover .swiper-button-next::after,
+.image-swiper:hover .swiper-button-prev::after
+{
+    display: inline-block;
+    font-size: 30px;
+}
+
+.background-blur::after {
+    content: '';
+    width: 100%;
+    height: 123px;
+    z-index: 2;
+    background-color: rgba(250 250 250 / 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+.background-blur:hover::after {
+    background-color: rgba(250 250 250 / 0);
+}
