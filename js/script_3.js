@@ -76,7 +76,7 @@ btnAddArr.forEach(function (item, i) {
   });
 
 });
-
+/*
 function createTotal() {
         
     const totalPrice = document.createElement("div");
@@ -87,7 +87,7 @@ function createTotal() {
 }
 createTotal();
 
-
+*/
 
 
 
