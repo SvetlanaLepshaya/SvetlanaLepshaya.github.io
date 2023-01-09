@@ -255,7 +255,7 @@
   
     .header__name-class {
       position: absolute;
-      right: -65px;
+      right: -58px;
       top: 15px;
       transition: all 0.2s ease-in-out;
     }

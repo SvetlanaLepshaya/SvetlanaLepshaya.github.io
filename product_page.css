@@ -160,6 +160,7 @@ label.radio-black-anthracite-label::before {
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.1s linear;
+    color: white;
 }
 
 .btn-add-to-cart:hover {
