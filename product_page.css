@@ -180,5 +180,13 @@ label.radio-black-anthracite-label::before {
 
     }
 
-
+    .text-bold-large {
+        font-size: 24px;
+        
+    }
+    
+    .medium-text {
+        font-size: 14px;
+    
+    }
 }

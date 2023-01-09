@@ -163,6 +163,7 @@
     right: 0;
     z-index: 9;
     background-color: rgba(0, 0,0,0.7);
+    
 }
 
 .cart .cart-field {
@@ -182,6 +183,7 @@
     position: absolute;
     top: 25px;
     right: 10px;
+    color: black;
 }
 
 .product-in-cart {

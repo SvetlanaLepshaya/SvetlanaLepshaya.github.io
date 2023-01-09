@@ -55,41 +55,18 @@ a {
   margin-bottom: 0;
 }
 
-.field--email-label {
+.input__field + label {
   position: absolute;
   top: 10px;
   left: 0;
   cursor: text;
   color: #555555;
   font-size: 12px;
-}
-
-.field--email:focus,
-.field--password:focus {
-  border-color: black;
-}
-
-.field--email:focus+.field--email-label {
-  top: -10px;
   transition: all 0.3s ease;
 }
 
 .form-name-wrapper {
   display: flex;
-}
-
-.field--password-label {
-  font-size: 12px;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  cursor: text;
-  color: #555555;
-}
-
-.field--password:focus+.field--password-label {
-  top: -10px;
-  transition: all 0.3s ease;
 }
 
 .input-remember-wrapper {

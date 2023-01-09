@@ -444,13 +444,11 @@ ul>li {
   gap: 20px;
 }
 
-.input-last-name-wrapper {
-  width: 50%;
-}
-
+.input-last-name-wrapper,
 .input-first-name-wrapper {
   width: 50%;
 }
+
 
 .input-email {
   width: 100%;
@@ -473,12 +471,9 @@ ul>li {
   cursor: text;
   color: #555555;
   font-size: 12px;
-}
-
-.input-field:focus+label {
-  top: -10px;
   transition: all 0.3s ease;
 }
+
 
 .subscribe-form .yellow-button {
   border: 2px solid #ffc356;

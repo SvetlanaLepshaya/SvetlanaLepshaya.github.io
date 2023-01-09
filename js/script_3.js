@@ -48,6 +48,7 @@ let sumPrice = 0;
 btnAddArr.forEach(function (item, i) {
   item.addEventListener("click", function () {
     let item = productArr[i].cloneNode(true);
+    let btnAdd = productArr[i].querySelector('.btn__add-to-cart');
     let btn = item.querySelector(".btn__add-to-cart");
     let img = item.querySelector("img");
     let imgWrap = item.querySelector(".product-image-wrapper");
@@ -71,6 +72,7 @@ btnAddArr.forEach(function (item, i) {
     item.classList.add("product-in-cart");
     cartQuantity.innerHTML = Number(cartQuantity.innerHTML) + 1;
     
+    btnAdd.setAttribute('disabled', 'true');
     
    
   });
